@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Votação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Votação</h1>
+        <div class="input-group">
+            <label for="votosA">Votos para o Candidato A:</label>
+            <input type="number" id="votosA" min="0" value="0">
+        </div>
+        <div class="input-group">
+            <label for="votosB">Votos para o Candidato B:</label>
+            <input type="number" id="votosB" min="0" value="0">
+        </div>
+        <button onclick="contabilizarVotos()">Contabilizar Votos</button>
+        <div class="results">
+            <h2>Resultados:</h2>
+            <p id="totalA">Total de Votos do Candidato A: 0</p>
+            <p id="totalB">Total de Votos do Candidato B: 0</p>
+            <p id="totalGeral">Total de Votos Geral: 0</p>
+            <p id="percentualA">Percentual de Votos do Candidato A: 0%</p>
+            <p id="percentualB">Percentual de Votos do Candidato B: 0%</p>
+            <div id="grafico">
+                <div id="barraA" class="barra"><span id="textoA">0%</span></div>
+                <div id="barraB" class="barra"><span id="textoB">0%</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.results {
+    margin-top: 20px;
+}
+
+.results p {
+    font-size: 18px;
+    color: #333;
+}
+
+#grafico {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.barra {
+    position: relative;
+    width: 45%;
+    height: 30px;
+    text-align: center;
+    color: white;
+    padding: 5px 0;
+    margin: 5px;
+    transition: width 0.5s ease;
+}
+
+#barraA {
+    background-color: #4CAF50;
+}
+
+#barraB {
+    background-color: #2196F3;
+}
+
+.barra span {
+    position: absolute;
+    center: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
